@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO-APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- modal  -->
+    <div class="modal" id="todo_form">
+        <div class="header">
+            <div class="title">Add Your Task</div>
+            <button class="btn close-btn" data-target="#modal1">&times;</button>
+        </div>
+        <div class="body">
+            <input type="text" id="todo_input"/>
+            <input type="submit" value="Add Todo" id="todo_submit"/>
+        </div>
+    </div>
+
+
+    <!-- todo -->   
+    <div class="todo-container"  ">
+        <div class="status" id="no_status">
+            <h1>No Status</h1>
+            <button id="add_bttoon" data-target-modal="#todo_form">+Add Todo</button>
+            <div class="todo" draggable="true">
+                Example!!!
+                <span class="close">&times;</span>
+            </div>
+        </div>
+        <div class="status">
+            <h1> Started</h1>
+        </div>
+        <div class="status">
+            <h1>Inprogress</h1>
+        </div>
+        <div class="status">
+            <h1>Completed</h1>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <script src="main.js"></script>
+</body>
+
+</html>
